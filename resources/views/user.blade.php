@@ -6,18 +6,18 @@
             <hr>
             <div class="card">
                 <div class="cared-body">
-                    @if ($currentLoc)
+                    @if ($location)
 
-                    <h4> IP : {{$currentLoc->ip}}</h4>
-                    <h4> Country name : {{$currentLoc->countryName}}</h4>
-                    <h4> Country Code : {{$currentLoc->countryCode}}</h4>
-                    <h4> Region Code : {{$currentLoc->regionCode}}</h4>
-                    <h4> Region Name : {{$currentLoc->regionName}}</h4>
-                    <h4> City Name : {{$currentLoc->cityName}}</h4>
-                    <h4> Zip Code : {{$currentLoc->zipCode}}</h4>
-                    <h4> Latitude : {{$currentLoc->latitude}}</h4>
-                    <h4> Longitude : {{$currentLoc->longitude}}</h4>
-                    <h4> Timezone : {{$currentLoc->timezone}}</h4>
+                    <h4> IP : {{$location->ip}}</h4>
+                    <h4> Country name : {{$location->countryName}}</h4>
+                    <h4> Country Code : {{$location->countryCode}}</h4>
+                    <h4> Region Code : {{$location->regionCode}}</h4>
+                    <h4> Region Name : {{$location->regionName}}</h4>
+                    <h4> City Name : {{$location->cityName}}</h4>
+                    <h4> Zip Code : {{$location->zipCode}}</h4>
+                    <h4> Latitude : {{$location->latitude}}</h4>
+                    <h4> Longitude : {{$location->longitude}}</h4>
+                    <h4> Timezone : {{$location->timezone}}</h4>
 
                     @endif
                 </div>

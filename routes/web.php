@@ -8,4 +8,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('location' , [UserController::class , 'index']);
+Route::get('/location' , [UserController::class , 'index']);
