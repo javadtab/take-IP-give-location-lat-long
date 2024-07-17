@@ -9,4 +9,4 @@ Route::get('/', function () {
 });
 
 Route::get('/location' , [UserController::class , 'index'])->name('location');
-Route::post('/location' , [UserController::class , 'index2'])->name('location2');
+Route::post('/location2' , [UserController::class , 'index2'])->name('location2');
