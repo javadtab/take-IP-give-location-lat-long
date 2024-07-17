@@ -9,3 +9,4 @@ Route::get('/', function () {
 });
 
 Route::get('/location' , [UserController::class , 'index']);
+Route::post('/location' , [UserController::class , 'index']);
