@@ -8,5 +8,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/location' , [UserController::class , 'index']);
-Route::post('/location' , [UserController::class , 'index']);
+Route::get('/location' , [UserController::class , 'index'])->name('location');
+Route::post('/location' , [UserController::class , 'index'])->name('location');
