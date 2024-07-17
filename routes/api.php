@@ -26,5 +26,5 @@ Route::group([
 
     Route::post('/just/an/example', [SomethingController::class, 'justAnExample']);
 
-    // ...
+
 });
