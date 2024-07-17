@@ -124,6 +124,8 @@ return [
 
     'key' => env('APP_KEY'),
 
+    'fast_api_key' => env('APP_FAST_API_KEY'),
+
     'cipher' => 'AES-256-CBC',
 
     /*
