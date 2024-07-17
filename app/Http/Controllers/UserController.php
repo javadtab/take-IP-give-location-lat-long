@@ -11,8 +11,8 @@ class UserController extends Controller
 {
     public function index(Request $request)
     {
-        $apiKey = 'service.ee36424147be4386be2a3f6821290c50';
-        $apiUrl ="service.ee36424147be4386be2a3f6821290c50";
+        $apiKey = 'service.b74ac64cccb14499b4a1f65042484a04';
+        $apiUrl ="https://api.neshan.org/v5/reverse?lat=LATITUDE&lng=LONGITUDE";
 
             $lat = $request->lat;
             $long = $request->long;
@@ -20,11 +20,6 @@ class UserController extends Controller
             return view('user' , compact('location'));
 
 
-    }
-
-    public function index2()
-    {
-        return view('user');
     }
 }
 
