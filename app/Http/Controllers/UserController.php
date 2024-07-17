@@ -2,16 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use Geocoder\Location;
 use Illuminate\Http\Request;
-use Stevebauman\Location\Facades\Location;
+use Torann\GeoIP\Facades\GeoIP;
+
 
 class UserController extends Controller
 {
     public function index(Request $request)
     {
-        //$ip = $request->ip();
-        $ip ='17.172.224.47';
-        $currentLoc = Location::get($ip);
+        $lat = $request->lat();
+        $long = $request->long();
+        $currentLoc = geoIP::getLocation($lat, $long );
         return view('user' , compact('currentLoc'));
     }
 }
