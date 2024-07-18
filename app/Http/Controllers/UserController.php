@@ -17,7 +17,7 @@ class UserController extends Controller
 
             $lat = $request->lat;
             $long = $request->long;
-            $location = GeoLocation::getLocation($lat,$long );
+            $location = GeoLocation::getIp($lat,$long );
             return view('user' , compact('location'));
 
 
