@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Adrianorosa\GeoLocation\GeoLocation;
 use Geocoder\Location;
 use Illuminate\Http\Request;
 use Torann\GeoIP\Facades\GeoIP;
@@ -16,7 +17,7 @@ class UserController extends Controller
 
             $lat = $request->lat;
             $long = $request->long;
-            $location = GeoIP::getLocation("$lat$long" );
+            $location = GeoLocation::getLocation($lat,$long );
             return view('user' , compact('location'));
 
 
