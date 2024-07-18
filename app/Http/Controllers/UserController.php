@@ -16,11 +16,9 @@ class UserController extends Controller
         $apiUrl ="https://api.neshan.org/v5/reverse?lat=LATITUDE&lng=LONGITUDE";
 
          //   $lat = $request->lat;
-          //  $long = $request->long;
+        //  $long = $request->long;
             $location = GeoLocation::lookup(" 94.242.53.128");
             return view('user' , compact('location'));
-
-
     }
 }
 
