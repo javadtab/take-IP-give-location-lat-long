@@ -19,12 +19,3 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::group([
-    'prefix' => 'v1',
-    'middleware' => 'with_fast_api_key'
-], function () {
-
-    Route::post('/just/an/example', [SomethingController::class, 'justAnExample']);
-
-
-});
