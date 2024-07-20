@@ -8,7 +8,7 @@
 
            <!-- <div class="card">
                 <div class="cared-body">
-                    @if ($location)
+
 
                     <h4> IP : {{$location->ip}}</h4>
                     <h4> Country name : {{$location->countryName}}</h4>
@@ -20,7 +20,7 @@
                     <h4> Latitude : {{$location->latitude}}</h4>
                     <h4> Longitude : {{$location->longitude}}</h4>
                     <h4> Timezone : {{$location->timezone}}</h4>
-                    @endif
+
                 </div>
             </div><!-->
         </div>
