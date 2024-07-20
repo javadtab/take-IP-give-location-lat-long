@@ -19,19 +19,6 @@ class UserController extends Controller
 
          return view('user' , compact('lat','long'));
     }
-
-    public function showMap(lat $lat , long $long)
-    {
-
-          var  coord = { lat:lat , long:long};
-        new  google.maps.Map(document.getElementById("map"),
-         {
-            zoom:10 ,
-            center:coord
-         }
-    );
-
-    }
 }
 
 

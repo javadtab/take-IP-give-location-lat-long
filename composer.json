@@ -11,6 +11,7 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
+        "larswiegers/laravel-maps": "^0.18.0",
         "malhal/laravel-geographical": "^1.0",
         "stevebauman/location": "^7.3",
         "toin0u/geocoder-laravel": "^4.7",
