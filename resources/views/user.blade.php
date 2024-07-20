@@ -4,10 +4,9 @@
         <div class="container">
             <h1>CURRENT LOCATION </h1>
             <hr>
-            <h4> Latitude : {{$lat->latitude}}</h4>
-            <h4> Longitude : {{$long->longitude}}</h4>
 
-            <div class="card">
+
+           <!-- <div class="card">
                 <div class="cared-body">
                     @if ($location)
 
@@ -23,7 +22,7 @@
                     <h4> Timezone : {{$location->timezone}}</h4>
                     @endif
                 </div>
-            </div>
+            </div><!-->
         </div>
     </body>
 </html>
