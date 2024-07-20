@@ -16,7 +16,7 @@ class UserController extends Controller
           $lat = $request->lat;
           $long = $request->long;
 
-         return view('user' , compact('location'));
+         return view('user' , compact('lat','long'));
     }
 }
 
