@@ -4,6 +4,9 @@
         <div class="container">
             <h1>CURRENT LOCATION </h1>
             <hr>
+            <h4> Latitude : {{$lat->latitude}}</h4>
+            <h4> Longitude : {{$long->longitude}}</h4>
+
             <div class="card">
                 <div class="cared-body">
                     @if ($location)

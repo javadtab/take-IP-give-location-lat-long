@@ -12,13 +12,11 @@ class UserController extends Controller
 {
     public function index(Request $request)
     {
-        $apiKey = 'service.b74ac64cccb14499b4a1f65042484a04';
-        $apiUrl ="https://api.neshan.org/v5/reverse?lat=LATITUDE&lng=LONGITUDE";
 
-         //   $lat = $request->lat;
-        //  $long = $request->long;
-            $location = GeoLocation::lookup(" 94.242.53.128");
-            return view('user' , compact('location'));
+          $lat = $request->lat;
+          $long = $request->long;
+
+         return view('user' , compact('location'));
     }
 }
 
